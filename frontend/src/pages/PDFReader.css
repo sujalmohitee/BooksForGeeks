@@ -1,0 +1,113 @@
+.pdf-reader-page {
+  min-height: 100vh;
+  padding: 35px 5%;
+  background: #f3eee5;
+  color: #19372b;
+}
+
+.pdf-reader-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pdf-reader-header {
+  background: #fffdf9;
+  padding: 25px 30px;
+  border: 1px solid #e8e0d5;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.pdf-reader-header h1 {
+  margin: 0 0 8px;
+  color: #19372b;
+  font-size: 28px;
+}
+
+.pdf-reader-page-info {
+  color: #68736c;
+  margin: 0;
+}
+
+.pdf-document {
+  background: #d8d0c4;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.pdf-document .react-pdf__Page {
+  box-shadow: 0 8px 25px rgba(25, 55, 43, 0.18);
+}
+
+.pdf-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.pdf-controls button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #19372b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pdf-controls button:hover:not(:disabled) {
+  background: #2d5540;
+}
+
+.pdf-controls button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.pdf-progress {
+  margin-top: 20px;
+  background: #fffdf9;
+  padding: 18px 22px;
+  border: 1px solid #e8e0d5;
+  border-radius: 10px;
+}
+
+.pdf-progress p {
+  margin: 0 0 10px;
+  color: #68736c;
+  font-size: 14px;
+}
+
+.pdf-progress progress {
+  width: 100%;
+  height: 8px;
+}
+
+@media (max-width: 850px) {
+  .pdf-document {
+    padding: 15px;
+  }
+
+  .pdf-reader-page {
+    padding: 25px 3%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pdf-reader-header {
+    padding: 20px;
+  }
+
+  .pdf-reader-header h1 {
+    font-size: 23px;
+  }
+
+  .pdf-controls {
+    flex-wrap: wrap;
+  }
+}

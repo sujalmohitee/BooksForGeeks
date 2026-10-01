@@ -1,0 +1,93 @@
+.audiobook-page {
+  min-height: 80vh;
+  padding: 50px 8%;
+  background: #fffdf9;
+  color: #19372b;
+}
+
+.audiobook-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.audiobook-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.audiobook-header .section-label {
+  color: #a87935;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.audiobook-header h1 {
+  margin: 10px 0;
+  font-size: 34px;
+  color: #19372b;
+}
+
+.audiobook-author {
+  color: #68736c;
+  font-size: 16px;
+}
+
+.audiobook-cover {
+  width: 260px;
+  height: 340px;
+  margin: 0 auto 35px;
+  padding: 15px;
+  background: #f3eee5;
+  border: 1px solid #e8e0d5;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audiobook-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 7px;
+}
+
+.audiobook-player {
+  background: #19372b;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.audiobook-player audio {
+  width: 100%;
+}
+
+.audiobook-resume {
+  margin-top: 20px;
+  text-align: center;
+  color: #68736c;
+}
+
+.audiobook-resume strong {
+  color: #a87935;
+}
+
+@media (max-width: 600px) {
+  .audiobook-page {
+    padding: 35px 5%;
+  }
+
+  .audiobook-header h1 {
+    font-size: 27px;
+  }
+
+  .audiobook-cover {
+    width: 220px;
+    height: 290px;
+  }
+
+  .audiobook-player {
+    padding: 20px;
+  }
+}
